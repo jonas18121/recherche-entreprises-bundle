@@ -1,11 +1,11 @@
 <?php
 
-namespace Vendorcustom\RechercheEntreprisesBundle\Client;
+namespace Jonas18121\RechercheEntreprisesBundle\Client;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
-use Vendorcustom\RechercheEntreprisesBundle\Model\Entreprise;
-use Vendorcustom\RechercheEntreprisesBundle\Model\SearchResult;
+use Jonas18121\RechercheEntreprisesBundle\Model\Entreprise;
+use Jonas18121\RechercheEntreprisesBundle\Model\SearchResult;
 
 /**
  * Client pour interroger l'API Recherche d'entreprises.

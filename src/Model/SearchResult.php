@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Vendorcustom\RechercheEntreprisesBundle\Model;
+namespace Jonas18121\RechercheEntreprisesBundle\Model;
 
 /** 
  * Resultat paginé d'une recherche d'entreprise

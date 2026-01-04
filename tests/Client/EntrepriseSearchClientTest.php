@@ -1,15 +1,27 @@
 <?php
 
-namespace Vendorcustom\RechercheEntreprisesBundle\Tests\Client;
+namespace Jonas18121\RechercheEntreprisesBundle\Tests\Client;
 
-use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
+use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\Attributes\UsesClass;
+use PHPUnit\Framework\Attributes\CoversClass;
 use Symfony\Component\HttpClient\MockHttpClient;
+use Jonas18121\RechercheEntreprisesBundle\Model\Siege;
 use Symfony\Component\HttpClient\Response\MockResponse;
-use Vendorcustom\RechercheEntreprisesBundle\Client\EntrepriseSearchClient;
+use Jonas18121\RechercheEntreprisesBundle\Model\Entreprise;
+use Jonas18121\RechercheEntreprisesBundle\Model\SearchResult;
+use Jonas18121\RechercheEntreprisesBundle\Client\EntrepriseSearchClient;
 
+#[CoversClass(EntrepriseSearchClient::class)]
+#[UsesClass(Entreprise::class)]
+#[UsesClass(SearchResult::class)]
+#[UsesClass(Siege::class)]
 class EntrepriseSearchClientTest extends TestCase
 {
+    /**
+     * https://docs.phpunit.de/en/10.5/code-coverage.html
+     */
     public function testSearchReturnsResults(): void
     {
         // 1. Créer une réponse simulée

@@ -6,7 +6,7 @@ Merci de votre intérêt pour contribuer à ce projet ! 🎉
 
 ### 🐛 Reporter un Bug
 
-1. Vérifiez que le bug n'a pas déjà été signalé dans les [Issues](https://github.com/vendorcustom/recherche-entreprises-bundle/issues)
+1. Vérifiez que le bug n'a pas déjà été signalé dans les [Issues](https://github.com/jonas18121/recherche-entreprises-bundle/issues)
 2. Créez une nouvelle issue avec :
    - Un titre descriptif
    - Les étapes pour reproduire le bug
