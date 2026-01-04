@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Vendorcustom\RechercheEntreprisesBundle\Model;
+namespace Jonas18121\RechercheEntreprisesBundle\Model;
 
 /** 
  * Représente le siège d'une entreprise de l'API Recherche d'entreprise

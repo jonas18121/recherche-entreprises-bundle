@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Vendorcustom\RechercheEntreprisesBundle\Model;
+namespace Jonas18121\RechercheEntreprisesBundle\Model;
 
-use Vendorcustom\RechercheEntreprisesBundle\Model\Siege;
+use Jonas18121\RechercheEntreprisesBundle\Model\Siege;
 
 /** 
  * Représente une entreprise de l'API Recherche d'entreprise

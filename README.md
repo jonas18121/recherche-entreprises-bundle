@@ -5,14 +5,14 @@ Bundle Symfony pour l'[API Recherche d'entreprises](https://recherche-entreprise
 ### 📦 Installation
 
 ```bash
-composer require vendorcustom/recherche-entreprises-bundle
+composer require jonas18121/recherche-entreprises-bundle
 ```
 
 ### ⚙️ Configuration (optionnelle)
 
 ```yaml
-# config/packages/vendorcustom_recherche_entreprises.yaml
-vendorcustom_recherche_entreprises:
+# config/packages/jonas18121_recherche_entreprises.yaml
+jonas18121_recherche_entreprises:
     timeout: 10  # Timeout en secondes (défaut: 10)
 ```
 
@@ -21,7 +21,7 @@ vendorcustom_recherche_entreprises:
 #### Dans un Contrôleur
 
 ```php
-use Vendorcustom\RechercheEntreprisesBundle\Client\EntrepriseSearchClientInterface;
+use Jonas18121\RechercheEntreprisesBundle\Client\EntrepriseSearchClientInterface;
 
 public function __construct(
     private EntrepriseSearchClientInterface $entrepriseClient

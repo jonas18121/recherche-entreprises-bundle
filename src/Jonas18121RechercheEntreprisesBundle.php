@@ -1,21 +1,21 @@
 <?php
 
-namespace Vendorcustom\RechercheEntreprisesBundle;
+namespace Jonas18121\RechercheEntreprisesBundle;
 
 use Symfony\Component\Config\Definition\Configurator\DefinitionConfigurator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
-use Vendorcustom\RechercheEntreprisesBundle\Client\EntrepriseSearchClient;
-use Vendorcustom\RechercheEntreprisesBundle\Client\EntrepriseSearchClientInterface;
-use Vendorcustom\RechercheEntreprisesBundle\Command\SearchEntrepriseCommand;
+use Jonas18121\RechercheEntreprisesBundle\Client\EntrepriseSearchClient;
+use Jonas18121\RechercheEntreprisesBundle\Client\EntrepriseSearchClientInterface;
+use Jonas18121\RechercheEntreprisesBundle\Command\SearchEntrepriseCommand;
 
 use function Symfony\Component\DependencyInjection\Loader\Configurator\service;
 
 /**
  * Bundle pour l'API Recherche d'entreprises.
  */
-class VendorcustomRechercheEntreprisesBundle extends AbstractBundle
+class Jonas18121RechercheEntreprisesBundle extends AbstractBundle
 {
     public function configure(DefinitionConfigurator $definition): void
     {
@@ -38,7 +38,7 @@ class VendorcustomRechercheEntreprisesBundle extends AbstractBundle
     ): void {
         // Paramètres
         $container->parameters()
-            ->set('Vendorcustom_recherche_entreprises.timeout', $config['timeout'])
+            ->set('Jonas18121_recherche_entreprises.timeout', $config['timeout'])
         ;
 
         // Services
@@ -48,7 +48,7 @@ class VendorcustomRechercheEntreprisesBundle extends AbstractBundle
                 ->args([
                     service('http_client'),
                     service('logger')->ignoreOnInvalid(),
-                    '%Vendorcustom_recherche_entreprises.timeout%',
+                    '%Jonas18121_recherche_entreprises.timeout%',
                 ])
                 ->public()
 
@@ -57,7 +57,7 @@ class VendorcustomRechercheEntreprisesBundle extends AbstractBundle
                 ->public()
 
             // Alias nommé
-            ->alias('Vendorcustom_recherche_entreprises.client', EntrepriseSearchClientInterface::class)
+            ->alias('Jonas18121_recherche_entreprises.client', EntrepriseSearchClientInterface::class)
                 ->public()
 
             // Commande

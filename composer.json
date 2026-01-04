@@ -1,5 +1,5 @@
 {
-    "name": "vendorcustom/recherche-entreprises-bundle",
+    "name": "jonas18121/recherche-entreprises-bundle",
     "description": "Bundle Symfony pour l'API Recherche d'entreprises du gouvernement français",
     "type": "symfony-bundle",
     "license": "MIT",
@@ -7,7 +7,7 @@
     "authors": [
         {
             "name": "my name",
-            "email": "contact@vendorcustom.com"
+            "email": "contact@jonas18121.com"
         }
     ],
     "require": {
@@ -23,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Vendorcustom\\RechercheEntreprisesBundle\\": "src/"
+            "Jonas18121\\RechercheEntreprisesBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Vendorcustom\\RechercheEntreprisesBundle\\Tests\\": "tests/"
+            "Jonas18121\\RechercheEntreprisesBundle\\Tests\\": "tests/"
         }
     }
 }

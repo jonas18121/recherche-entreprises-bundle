@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Vendorcustom\RechercheEntreprisesBundle\Client;
+namespace Jonas18121\RechercheEntreprisesBundle\Client;
 
-use Vendorcustom\RechercheEntreprisesBundle\Model\Entreprise;
-use Vendorcustom\RechercheEntreprisesBundle\Model\SearchResult;
+use Jonas18121\RechercheEntreprisesBundle\Model\Entreprise;
+use Jonas18121\RechercheEntreprisesBundle\Model\SearchResult;
 
 /**
  * Interface pour le client de recherche d'entreprises.
